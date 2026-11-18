@@ -1,0 +1,10 @@
+requests
+fastapi
+uvicorn
+python-multipart
+requests
+
+requests
+fastapi
+uvicorn
+python-multipart

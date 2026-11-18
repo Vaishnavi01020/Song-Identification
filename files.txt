@@ -1,0 +1,36 @@
+step 1 -read_tracks
+step 2 - read_audio
+step 3 - save wav
+acr client
+step 4 - identify
+step 5 - filename
+step 6 - write disk
+organize
+step 7- log
+identify_wav
+File	Step
+read_tracks.py	1 – find the CD and list the tracks
+read_audio.py	2 – read one track (3-minute limit)
+save_wav.py	3 – save TrackNN.wav into the folder
+acr_client.py	ACRCloud connection
+identify.py	4 – identify the song and clean the name
+filename.py	5 – build the file name
+write_disk.py	6 – rename in the same folder
+organize.py	6b – group songs into the common artist’s folder
+log.py	7 – write log.csv
+main.py	runs all of the steps
+check_acr.py	tests your ACRCloud keys
+identify_wav.py	names WAV files you already have, without a CD
+server.py	the optional web page
+requirements.txt	requests, fastapi, uvicorn, python-multipart
+
+
+=======================================================================
+TO RUN THE File
+========================================================================
+cd "E:\music analysis\new1"
+.\venv\Scripts\activate
+pip install -r requirements.txt
+
+$env:ACR_HOST='...'; $env:ACR_ACCESS_KEY='...'; $env:ACR_ACCESS_SECRET='...'
+python main.py         # insert the CD, then run
